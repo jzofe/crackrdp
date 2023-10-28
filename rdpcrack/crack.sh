@@ -1,4 +1,6 @@
-sudo apt update && sudo apt install tor proxychains build-essential cmake masscan libpcap-dev -y;
+ # Arch 
+ 
+pacman -S tor proxychains build-essential cmake masscan libpcap-dev
 git clone https://github.com/FreeRDP/FreeRDP.git;
 cd FreeRDP;
 cmake CMakeLists.txt && make -j8 && sudo make install;
